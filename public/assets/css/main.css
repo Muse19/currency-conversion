@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+select,
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    box-shadow: 0px 3px 15px rgb(0 17 51 / 5%);
+    margin-top: .3rem;
+}
+
+select:focus,
+input:focus {
+    outline: 1px solid #0097e6;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn {
+    background: #c9c9c9;
+    color: #333333;
+    border: 0;
+    padding: 11px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    user-select: none;
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    background: #0071eb;
+    color: #fff;
+}
+
+.btn.btn-primary:not(:disabled):hover {
+    background: #2089fa;
+    box-shadow: #ccc 0px 0px 10px;
+}
+
+.btn.btn-error {
+    background: #ee404c;
+    color: rgb(247, 247, 247);
+}
+
+.btn.btn-error:not(:disabled):hover {
+    background: #f0606a;
+    color: rgb(243, 243, 243);
+}
+
+
+.btn:disabled {
+    background: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+}
